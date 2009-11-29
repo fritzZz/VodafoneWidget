@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Impostazioni">
+		<CheckBoxPreference
+			android:title="Cancella sms"
+			android:defaultValue="false"
+			android:summary="Cancella gli sms di credito residuo ricevuti"
+			android:key="smsPref" />
+        <CheckBoxPreference
+			android:title="Cancella lista chiamate"
+			android:defaultValue="false"
+			android:summary="Cancella le chiamate per il credito residuo"
+			android:key="callPref" /> 
+	</PreferenceCategory>
+	<PreferenceCategory android:title="TextToSpeech">
+		<CheckBoxPreference
+			android:title="Lettore Voce"
+			android:defaultValue="false"
+			android:summary="Lettura del credito residuo quando aggiornato"
+			android:key="TTSPref" />
+	</PreferenceCategory>
+	
+</PreferenceScreen>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="it.fritzzz.vodafoneWidget"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application 	android:icon="@drawable/icon" 
+    				android:label="@string/app_name"
+    				android:debuggable="true">
+    				
+		<receiver android:name=".VodafoneWidgetProvider" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+			android:resource="@xml/vodafone_widget_provider" />
+		</receiver>
+		
+		<activity android:name=".activities.VodafonePreferences">
+    		<intent-filter>
+        		<!-- action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" /-->
+    		</intent-filter>
+		</activity>
+		
+		<activity android:name=".activities.About">
+			<intent-filter>
+				<action android:name="it.fritzzz.vodafoneWidget.action.ABOUT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		
+		<receiver android:name=".sms.SMSReceiver" android:enabled="true">
+	      <intent-filter>
+	        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+	      </intent-filter>
+    	</receiver>
+		
+    </application>
+    
+    <uses-sdk android:minSdkVersion="3" />
+    
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    
+</manifest> 

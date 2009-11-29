@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/mainAbsoluteLayout"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/logo_vodafone"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+		
+	
+	<ImageButton
+		android:id="@+id/hiddenLeftButton"
+		android:layout_width="50dip"
+		android:layout_height="wrap_content"
+		android:layout_x="0dip"
+		android:layout_y="0dip"
+		android:background="@drawable/transparent_left"
+		/>
+	
+	<TextView
+		android:id="@+id/widget_credit"
+		android:text="@constant/defaultCredit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_x="65dip"
+		android:layout_y="27dip"
+		android:textColor="@android:color/black"
+		android:textStyle="bold"
+		android:textSize="19dip"/>
+		
+	<TextView
+		android:id="@+id/widget_date"
+		android:text="@constant/defaultCredit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_x="50dip"
+		android:layout_y="19dip"
+		android:textColor="@android:color/black"
+		android:textStyle="italic"
+		android:textSize="11dip"/>
+	
+	<ImageButton
+		android:id="@+id/hiddenRightButton"
+		android:layout_width="97dip"
+		android:layout_height="wrap_content"
+		android:layout_x="50dip"
+		android:layout_y="0dip"
+		android:background="@drawable/transparent_right"
+		
+		/>
+	
+	<FrameLayout
+	android:id="@+id/frameProgressBar"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_x="0dip"
+	android:layout_y="14dip"
+	android:visibility="gone"
+	>	
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+			
+			/>
+	</FrameLayout>
+
+
+</AbsoluteLayout>

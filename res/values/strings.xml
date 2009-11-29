@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VodafoneApp</string>
+    <string name="version">1.0</string>
+    <string name="about">Widger realizzato per...</string>
+   <string name="author">Franzi Alessandro</string>
+   <string name="mail">Franzi Alessandro</string>
+   
+    
+    <string name="delete_sms">Cancellare messaggi credito</string>
+    <string name="disable_notify">Disattivare suono notifiche</string>
+    <string name="delete_call_log">Cancellare chiamate credito</string>
+    
+    <string name="credito_residuo">Credito residuo</string>
+    <string name="moneta">euro</string>
+    <string name="centesimi">centesimì</string>
+    
+    <string name="tts_error">E' necessario scaricare le librerie TTS dal market per abilitare questa opzione.</string>
+</resources>

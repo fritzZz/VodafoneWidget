@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="defaultCredit" type="constant">n.a </item>
+    <item name="credit_refresh_number" type="constant">404</item>
+    <item name="prefix_credit_refresh_number" type="constant">+</item>
+    <item name="valuta" type="constant">€</item>
+    <item name="stringCreditInsideSMSForCredit" type="constant">Traff. Dispon. E. </item>
+    <item name="stringSuffixCreditInsideSMSForCredit" type="constant">,</item>
+    <item name="stringCreditInsideSMSForDate" type="constant">Vodafone </item>
+    <item name="stringSuffixCreditInsideSMSForDate" type="constant">: Traff.</item>
+</resources>
